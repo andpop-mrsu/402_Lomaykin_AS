@@ -2,6 +2,8 @@
 setlocal enabledelayedexpansion
 chcp 65001>nul
 
+
+if not exist "sqlite3.exe" echo Failed: sqlite3 not exist && pause
 echo.
 echo CREATE TABLE IF NOT EXISTS users (name TEXT NOT NULL, date TEXT NOT NULL ); | sqlite3 users.db
 echo insert into users values('%USERNAME%', datetime('now', 'localtime')); | sqlite3 users.db
