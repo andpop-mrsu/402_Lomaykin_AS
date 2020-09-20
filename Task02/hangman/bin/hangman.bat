@@ -1,3 +1,7 @@
 @echo off
 
-php hangman
+php hangman 
+
+echo.
+
+pause
