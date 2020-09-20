@@ -31,15 +31,14 @@
 С помощью GitHub:
 1. Загрузите проект на персональный компьютер
 2. Перейдите в корневой каталог
-3. Выполните в консоли команду composer require Yoshaexe/hangman
+3. Выполните в консоли команду composer update
 4. Перейдите в каталог bin и запустите файл hangman.bat
 
 Из Packagist:
 1. Перейдите в каталог, в который необходимо загрузить проект
-2. Выполните в консоли команду composer require Yoshaexe/hangman
-3. Перейдите в каталог vendor/bin
-4. Запустите файл hangman.bat
+2. Выполните в консоли команду composer require yosha_exe/hangman
+3. Перейдите в каталог bin и запустите файл hangman.bat
 
 # Ссылки
 
-* Packagist: 
+* Packagist: https://packagist.org/packages/yosha_exe/hangman
