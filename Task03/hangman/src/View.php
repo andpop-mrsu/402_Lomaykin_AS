@@ -13,9 +13,13 @@
 
         echo $pseudographics[$fails];
 
+        
+
         for ($i = 0; $i < strlen($entryField); $i++) {
             echo $entryField[$i];
         }
+
+        echo "\n";
 
         echo "\n";
     }

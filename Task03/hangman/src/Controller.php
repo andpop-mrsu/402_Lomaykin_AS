@@ -14,7 +14,7 @@ function showResult ($answers, $word)
         echo "\n You lose!";
     }
 
-    echo "\n The hidden word was:: $word\n";
+    echo "\n The hidden word was: $word\n";
 }
 
 function startGame() 
