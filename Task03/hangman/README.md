@@ -36,7 +36,7 @@
 
 Из Packagist:
 1. Перейдите в каталог, в который необходимо загрузить проект
-2. Выполните в консоли команду composer require yosha_exe/hangman
+2. Выполните в консоли команду composer create-project yosha_exe/hangman
 3. Перейдите в каталог bin и запустите файл hangman.bat
 
 # Ссылки
