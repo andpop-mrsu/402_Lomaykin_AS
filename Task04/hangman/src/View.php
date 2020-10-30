@@ -1,28 +1,25 @@
-<?php namespace Yoshaexe\hangman\View;
+<?php
 
-    function showGame($fails, $entryField) {
-        $pseudographics = array (
-            " +---+\n     |\n     |\n     |\n    ===\n ",
-		    " +---+\n 0   |\n     |\n     |\n    ===\n ",
-		    " +---+\n 0   |\n |   |\n     |\n    ===\n ",
-		    " +---+\n 0   |\n/|   |\n     |\n    ===\n ",
-		    " +---+\n 0   |\n/|\  |\n     |\n    ===\n ",
-		    " +---+\n 0   |\n/|\  |\n/    |\n    ===\n ",
-		    " +---+\n 0   |\n/|\  |\n/ \  |\n    ===\n "
-        );
+namespace Yoshaexe\hangman\View;
 
-        echo $pseudographics[$fails];
+use function cli\line;
 
-        
+function showGame($fails, $gameField)
+{
+    $graphic = array(
+        " +---+\n     |\n     |\n     |\n    ===\n ",
+        " +---+\n 0   |\n     |\n     |\n    ===\n ",
+        " +---+\n 0   |\n |   |\n     |\n    ===\n ",
+        " +---+\n 0   |\n/|   |\n     |\n    ===\n ",
+        " +---+\n 0   |\n/|\  |\n     |\n    ===\n ",
+        " +---+\n 0   |\n/|\  |\n/    |\n    ===\n ",
+        " +---+\n 0   |\n/|\  |\n/ \  |\n    ===\n "
+    );
 
-        for ($i = 0; $i < strlen($entryField); $i++) {
-            echo $entryField[$i];
-        }
+    echo "\n";
 
-        echo "\n";
+    line($graphic[$fails]);
+    line($gameField);
 
-        echo "\n";
-    }
-
-    
-?>
+    echo "\n";
+}

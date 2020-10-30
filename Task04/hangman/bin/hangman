@@ -8,7 +8,7 @@
         require_once($autoloadPathForPackagist);
     }
 
-    use function Yoshaexe\hangman\Controller\startGame;
+    use function Yoshaexe\hangman\Controller\gameMenu;
 
-    startGame();
+    gameMenu();
 ?>
