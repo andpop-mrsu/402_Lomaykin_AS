@@ -1,4 +1,0 @@
-{
-    "phpSniffer.autoDetect": true,
-    "phpSniffer.standard": "PSR-12"
-}
