@@ -1,0 +1,78 @@
+html {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-blue: #200772;
+    --light-blue: #644aa0;
+    --main-yellow: #FFF100;
+    --main-orange: #FFB700;
+    --main-red: #cc4e47;
+    --main-black: #333;
+    --main-white: #fff;
+    --light-gray: #f1f1f1;
+    --light-green: #87F03C;
+    --bg-color: #acefe0;
+    --main-green: #3ba67a;
+    --track-color: #ADD8E6;
+}
+
+.app-name {
+    margin: 20px auto;
+    width: 74px;
+    font-size: 20px;
+}
+
+.username-form {
+    margin: 20px auto;
+    width: 320px;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 500px;
+    text-align: center;
+}
+
+.next__button {
+    margin: 5px auto;
+    min-height: 30px;
+    width: 200px;
+}
+
+.view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-visualization {
+    margin: 5px auto;
+    height: 500px;
+    width: 500px;
+
+}
+
+.game-letter {
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.result {
+    text-align: center;
+}
+
