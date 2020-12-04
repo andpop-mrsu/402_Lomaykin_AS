@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Hangman</title>
+</head>
+<body>
+
+<header>
+    <div class="app-name">Виселица</div>
+</header>
+<main>
+
+    <section id="greeting" class="username-form">
+        <form>
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name">
+            <button type="button" id="nextInfo">Далее</button>
+        </form>
+    </section>
+    <section class="view">
+        <canvas id="canvas" class="game-visualization" width=250 height=450 hidden=true></canvas>
+    </section>
+    <section class="game-info" id="information">
+        <p id="info" class="info"></p>
+        <button id="nextShowGame" class="next__button">Далее</button>
+    </section>
+
+    <section class="game-letter" id="show-game">
+        <form action="">
+            <label for="getLetter">Ваша буква:</label>
+            <input type="text" id="getLetter" name="getLetter" maxlength="1">
+            <button type="button" id="checkLetter">Ответить</button>
+        </form>
+    </section>
+
+    <section class="message" id="message"></section>
+
+    <section class="result" id="result">
+        <p id="resultText"></p>
+        <button id="replayGame">Сыграть ещё</button>
+    </section>
+
+
+</main>
+
+<script src="src/js/controller.js" type="module"></script>
+</body>
+</html>
