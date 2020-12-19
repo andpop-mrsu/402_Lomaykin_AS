@@ -12,67 +12,88 @@ body {
 }
 
 :root {
-    --dark-blue: #200772;
-    --light-blue: #644aa0;
-    --main-yellow: #FFF100;
-    --main-orange: #FFB700;
-    --main-red: #cc4e47;
     --main-black: #333;
-    --main-white: #fff;
-    --light-gray: #f1f1f1;
-    --light-green: #87F03C;
-    --bg-color: #acefe0;
-    --main-green: #3ba67a;
-    --track-color: #ADD8E6;
+    --odd-color: #acefe0;
+    --even-color: #ADD8E6;
 }
 
 .app-name {
-    margin: 20px auto;
-    width: 74px;
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
 }
 
-.username-form {
-    margin: 20px auto;
-    width: 320px;
-}
-
-.game-info {
+.app {
     display: flex;
     flex-direction: column;
-    margin: 20px auto;
-    width: 500px;
+    align-items: center;
+    gap: 20px;
+}
+
+.canvas {
+    display: none;
+}
+
+.app__table {
+    display: none;
+    border: 1px solid var(--main-black);
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--odd-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--even-color);
+}
+
+.info__block, .result{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
     text-align: center;
 }
 
-.next__button {
-    margin: 5px auto;
-    min-height: 30px;
-    width: 200px;
+.player-init {
+    display: none;
+    width: 320px;
+    justify-content: space-between;
 }
 
-.view {
+.show-game {
+    display: none;
+    width: 360px;
+    justify-content: space-between;
+}
+
+.gameList {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.gameList-handler__block {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gameTable-title {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.game-visualization {
-    margin: 5px auto;
-    height: 500px;
-    width: 500px;
-
-}
-
-.game-letter {
-    margin: 5px auto;
+.active {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
 }
-
-.result {
-    text-align: center;
-}
-

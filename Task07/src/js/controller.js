@@ -1,21 +1,26 @@
 import {
     startGame,
     informationOutput,
-    showGameOutput
-} from './view.js';
+    showGameOutput,
+    replayGame,
+    showGames
+} from './View.js';
 
 import {
-    btn_nextInfo,
-    btn_nextShowGame,
-    btn_checkLetter,
-    btn_replayGame,
-    checkLetter
-} from "./model.js";
-
+    nextInfo,
+    nextShowGame,
+    checkLetterBtn,
+    playAgainBtn,
+    checkLetter,
+    replayBtn,
+    listGames
+} from "./Model.js";
 
 startGame();
 
-btn_nextInfo.addEventListener("click", informationOutput);
-btn_nextShowGame.addEventListener("click", showGameOutput);
-btn_checkLetter.addEventListener("click", checkLetter);
-btn_replayGame.addEventListener("click", showGameOutput);
+nextInfo.addEventListener("click", informationOutput);
+nextShowGame.addEventListener("click", showGameOutput);
+checkLetterBtn.addEventListener("click", checkLetter);
+playAgainBtn.addEventListener("click", showGameOutput);
+replayBtn.addEventListener("click", replayGame);
+listGames.addEventListener("click", showGames);
