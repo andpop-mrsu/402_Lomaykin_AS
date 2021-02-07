@@ -1,0 +1,22 @@
+{
+  "name": "alex/task01",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Yosha-exe",
+      "email": "alexmarkeloff5@gmail.com"
+    }
+  ],
+  "require": {},
+  "bin": [
+    "bin/run_test"
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    },
+    "files": [
+      "src/Test.php"
+    ]
+  }
+}
