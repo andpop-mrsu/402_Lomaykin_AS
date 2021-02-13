@@ -32,7 +32,7 @@ class BookTest extends TestCase
     public function testSetYear()
     {
         $book = new Book();
-        $book->setYear(20216);
+        $book->setYear(2016);
 
         self::assertEquals(2016, $book->getYear());
     }
